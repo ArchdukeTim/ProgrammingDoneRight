@@ -193,3 +193,29 @@ Uses in FRC
 -----------
 
 FRC provides less than ideal environments for computer vision. Often times there is noise in your images that cannot be overcome by reducing the exposure of your camera and thresholding. When this occurs, consider using a morphological operation.
+
+In many cases, however, these standard kernels will not suffice for FRC. Either erosion will remove too much of the target(s) or dilate will combine targets.
+
+The following kernel will not alter the width of a pixel cluster, only the height. This is useful for when your targets are close together horizontally or if the target is not very tall and you must erode.
+
+:math:`\left( \begin{array}{ccc} 0 & 0 & 0 \\ 1 & 1 & 1 \\ 0 & 0 & 0 \end{array} \right)`
+
+.. figure:: ../vision/media/horizontal.png
+    :width: 200px
+    :align: center
+    :height: 100px
+    :alt: Gradient Example
+    :figclass: align-center
+
+What is not pictured is the border on the top and left side of the image. this is a consequence of this kernel. Despite this consequence, this kernel may be very useful in many cases.
+
+Likewise, this kernel will not alter the height of the pixel cluster, only the width, this is useful with targets who are close together vertically or if the target is not vey tall and you must erode.
+
+:math:`\left( \begin{array}{ccc} 0 & 1 & 0 \\ 0 & 1 & 0 \\ 0 & 1 & 0 \end{array} \right)`
+
+.. figure:: ../vision/media/verticle.png
+    :width: 200px
+    :align: center
+    :height: 100px
+    :alt: Gradient Example
+    :figclass: align-center

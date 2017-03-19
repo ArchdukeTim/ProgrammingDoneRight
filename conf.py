@@ -32,7 +32,7 @@
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx.ext.todo',
-    'sphinx.ext.imgmath', 'sphinx_tabs.tabs']
+    'sphinx.ext.mathjax', 'sphinx_tabs.tabs']
 
 imgmath_latex_preamble = '''
     \\newcommand{\\R}{\\mathbb{R}}
