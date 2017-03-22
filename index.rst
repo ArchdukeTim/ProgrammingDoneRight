@@ -25,6 +25,14 @@ Welcome to FRC Programming Done Right's documentation!
 
     control/*
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Motors
+    :titlesonly:
+    :glob:
+
+    motors/*
+
 
 
 .. toctree::
