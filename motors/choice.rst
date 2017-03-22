@@ -8,7 +8,7 @@ In FRC, there are two ways to control a motor. Either with **P**\ usle **W**\ id
 
 PWM
 ^^^
-PWM works by directly controlling motor output. With PWM, you can't attach sensors directly to the motor controller. Motor controllers that work with CAN are Talons, Victors, VictorSPs, and Talon SRXs (with modification). PWM is useful for controlling simple subsystems that don't require feedback such as intake mechanisms that just spin at 1 speed, drivetrains that don't contain encoders, or a shooter feeder belt that only spins one way.
+PWM works by directly controlling motor output. With PWM, you can't attach sensors directly to the motor controller. Motor controllers that work with PWM are Talons, Victors, VictorSPs, and Talon SRXs (with modification). PWM is useful for controlling simple subsystems that don't require feedback such as intake mechanisms that just spin at 1 speed, drivetrains that don't contain encoders, or a shooter feeder belt that only spins one way.
 
 CAN
 ^^^
