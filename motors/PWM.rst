@@ -45,5 +45,5 @@ Both PWM and CAN motor controllers use the ``set`` method to control the motors.
 
     .. code-tab:: py
 
-        shooter.set(1)
-        intake.set(.5)
+        self.shooter.set(1)
+        self.intake.set(.5)
